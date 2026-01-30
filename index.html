@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browe House 2.0 - Студия Красоты в Тольятти | Идеальный Маникюр и Брови</title>
+    <meta name="description"
+        content="Студия красоты Browe House 2.0 в Тольятти (ул. 40 Лет Победы, 58). Профессиональный маникюр, оформление бровей, уютная атмосфера и высокий рейтинг. Записывайтесь! +7 927 893-11-55">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">BROW HOUSE 2.0</a>
+            <nav class="nav-links">
+                <a href="#about">О нас</a>
+                <a href="#services">Услуги</a>
+                <a href="#reviews">Отзывы</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+            <a href="tel:+79278931155" class="phone-btn">
+                <ion-icon name="call-outline"></ion-icon>
+                +7 927 893-11-55
+            </a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-left">
+                <h1>Салон <span class="text-highlight">Красоты</span> в Тольятти</h1>
+                <a href="https://n1024198.yclients.com/" target="_blank" class="cta-btn desktop-only">Записаться на Процедуру</a>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4.9</div>
+                        <div class="stat-label">Рейтинг Яндекса</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Лет опыта</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Стерильность</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-services">
+                    <div class="hero-service-item">Окрашивание и Осветление волос</div>
+                    <div class="hero-service-item">Стрижки и Укладки</div>
+                    <div class="hero-service-item">Маникюр</div>
+                    <div class="hero-service-item">Педикюр</div>
+                    <div class="hero-service-item">Брови</div>
+                    <div class="hero-service-item">Ресницы</div>
+                </div>
+                <a href="https://n1024198.yclients.com/" target="_blank" class="cta-btn mobile-only">Записаться на Процедуру</a>
+            </div>
+        </div>
+        <div class="hero-separator"></div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container about-content">
+            <div class="about-text">
+
+                <h2>Пространство Красоты <br>и Уюта</h2>
+                <p class="about-lead">Brow House 2.0 — это место в Автозаводском районе Тольятти, где высокий профессионализм мастеров сочетается с искренней заботой о каждом госте.</p>
+                
+                <ul class="about-features-list">
+                    <li>
+                        <div class="feature-bullet">
+                            <ion-icon name="cafe-outline"></ion-icon>
+                        </div>
+                        <span>Вкусный кофе и сладости для каждого гостя</span>
+                    </li>
+                    <li>
+                        <div class="feature-bullet">
+                            <ion-icon name="shield-checkmark-outline"></ion-icon>
+                        </div>
+                        <span>Стерильность инструментов по нормам СанПиН</span>
+                    </li>
+                    <li>
+                        <div class="feature-bullet">
+                            <ion-icon name="musical-notes-outline"></ion-icon>
+                        </div>
+                        <span>Расслабляющая музыка и особая атмосфера</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="about-img">
+                <video autoplay muted loop playsinline poster="images/interior.png">
+                    <source src="images/video.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Прайс-лист</h2>
+            <!-- Full Price List Accordion -->
+            <div class="price-list-container">
+                <!-- Special Offers -->
+                <div class="price-category">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>🔥 Специальные предложения</h3>
+                        <ion-icon name="chevron-down-outline" class="accordion-icon"></ion-icon>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="price-table">
+                            <div class="price-row">
+                                <span class="price-name">Комбо (Брови + Ламинирование ресниц) + Ботокс</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч 30 мин</span>
+                                    <span class="price-cost">2 600 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">КОМБО маникюр с покрытием + педикюр с обработкой стопы и покрытием гель лак</span>
+                                <div class="price-details">
+                                    <span class="price-time">4 ч</span>
+                                    <span class="price-cost">3 500 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Комбо (художественное оформление бровей + ламинирование ресниц)</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч 30 мин</span>
+                                    <span class="price-cost">2 400 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hair Coloring -->
+                <div class="price-category">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Окрашивание и Осветление волос</h3>
+                        <ion-icon name="chevron-down-outline" class="accordion-icon"></ion-icon>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="price-table">
+                            <!-- Lightening -->
+                            <div class="price-row">
+                                <span class="price-name">Осветление корней</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">2 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Осветление прядей</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">400 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Тотал осветление (короткие волосы)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">1 700 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Тотал осветление (средние волосы)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">2 800 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Тотал осветление (длинные волосы)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">4 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Тонирование</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">1 500 – 3 000 ₽</span>
+                                </div>
+                            </div>
+                            <!-- Coloring -->
+                            <div class="price-row">
+                                <span class="price-name">Окрашивание/тонировка в один тон (короткие)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">2 200 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Окрашивание/тонировка в один тон (средние)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">2 700 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Окрашивание/тонировка в один тон (длинные)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">3 700 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Окрашивание/тонировка в один тон (очень длинные)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">4 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Окрашивание корней</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">2 200 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Сложные техники (короткие)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">3 000 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Сложные техники (средняя длина)</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч</span>
+                                    <span class="price-cost">3 000 – 4 000 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Сложные техники (длинные)</span>
+                                <div class="price-details">
+                                    <span class="price-time">3 ч</span>
+                                    <span class="price-cost">4 000 – 8 000 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Мелирование</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч 30 мин</span>
+                                    <span class="price-cost">от 2 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Haircuts -->
+                <div class="price-category">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Стрижки и Укладки</h3>
+                        <ion-icon name="chevron-down-outline" class="accordion-icon"></ion-icon>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="price-table">
+                            <div class="price-row">
+                                <span class="price-name">Женская стрижка короткие</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">850 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Стрижка женская средняя длина</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">950 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Стрижка длинные волосы</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">1 000 – 1 500 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Подровнять кончики</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">600 – 900 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Укладка волос ежедневная</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">800 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Укладка волос торжественная</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">1 000 – 2 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Прикорневой объём</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч</span>
+                                    <span class="price-cost">2 500 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Стрижка мужская спортивная</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">800 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Стрижка мужская модельная</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">900 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Детская стрижка до 10 лет</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">600 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Manicure -->
+                <div class="price-category">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Маникюр</h3>
+                        <ion-icon name="chevron-down-outline" class="accordion-icon"></ion-icon>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="price-table">
+                            <div class="price-row">
+                                <span class="price-name">Маникюр без покрытия (комбинированный)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">1 000 – 1 100 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Маникюр + покрытие гель-лак (средние) + укрепление</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч</span>
+                                    <span class="price-cost">1 800 – 1 900 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Наращивание ногтей + маникюр + гель-лак (однотонное)</span>
+                                <div class="price-details">
+                                    <span class="price-time">3 ч</span>
+                                    <span class="price-cost">2 300 – 2 500 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Коррекция нарощенных ногтей с покрытием гель-лак</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч 30 мин</span>
+                                    <span class="price-cost">2 000 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Покрытие лаком</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">250 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Снятие (гель, нарощенных ногтей) + опил</span>
+                                <div class="price-details">
+                                    <span class="price-time">45 мин</span>
+                                    <span class="price-cost">500 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Снятие (гель-лак)</span>
+                                <div class="price-details">
+                                    <span class="price-time">15 мин</span>
+                                    <span class="price-cost">350 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Ремонт ногтя (на руках)</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">150 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Дизайн (френч или лунки) (10 пальцев)</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">300 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Дизайн (втирка, посыпка, стразы, слайдеры)</span>
+                                <div class="price-details">
+                                    <span class="price-time">15-20 мин</span>
+                                    <span class="price-cost">100 – 200 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Мужской маникюр</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч 30 мин</span>
+                                    <span class="price-cost">1 000 – 1 100 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Спа- уход для рук</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">250 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pedicure -->
+                <div class="price-category">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Педикюр</h3>
+                        <ion-icon name="chevron-down-outline" class="accordion-icon"></ion-icon>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="price-table">
+                            <div class="price-row">
+                                <span class="price-name">Педикюр без покрытия (пальчики)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">1 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Педикюр без покрытия (полный с обработкой стопы)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч 30 мин</span>
+                                    <span class="price-cost">1 500 – 1 600 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Педикюр (пальчики) + покрытие гель-лак</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч</span>
+                                    <span class="price-cost">1 700 – 1 800 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">SMART-педикюр (полный с обработкой стопы) + покрытие гель-лак</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч</span>
+                                    <span class="price-cost">1 900 – 2 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Мужской педикюр (с обработкой стопы)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч 30 мин</span>
+                                    <span class="price-cost">1 600 – 1 700 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Спа- уход для ножек</span>
+                                <div class="price-details">
+                                    <span class="price-time">45 мин</span>
+                                    <span class="price-cost">400 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Eyebrows -->
+                <div class="price-category">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Брови</h3>
+                        <ion-icon name="chevron-down-outline" class="accordion-icon"></ion-icon>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="price-table">
+                            <div class="price-row">
+                                <span class="price-name">Коррекция бровей без окрашивания</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">600 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Окрашивание бровей (краска/хна) без коррекции</span>
+                                <div class="price-details">
+                                    <span class="price-time">30-60 мин</span>
+                                    <span class="price-cost">600 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Художественное оформление бровей (комплекс)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">1 000 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Долговременная укладка</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">1 100 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Долговременная укладка с коррекцией и окрашиванием</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">1 500 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Счастье для бровей</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">400 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Мужская коррекция</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">700 – 800 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lashes -->
+                <div class="price-category">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Ресницы</h3>
+                        <ion-icon name="chevron-down-outline" class="accordion-icon"></ion-icon>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="price-table">
+                            <div class="price-row">
+                                <span class="price-name">Ламинирование ресниц</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч 30 мин</span>
+                                    <span class="price-cost">1 500 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Ламинирование ресниц + Ботокс</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">1 700 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Наращивание ресниц (Классика)</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч 30 мин</span>
+                                    <span class="price-cost">1 700 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Наращивание ресниц (1.5D - 2D)</span>
+                                <div class="price-details">
+                                    <span class="price-time">2.5 - 3 ч</span>
+                                    <span class="price-cost">1 800 – 1 900 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Наращивание ресниц (2.5D - 3D)</span>
+                                <div class="price-details">
+                                    <span class="price-time">3 ч</span>
+                                    <span class="price-cost">2 000 – 2 100 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">LED-наращивание (любой объем)</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 - 3 ч</span>
+                                    <span class="price-cost">1 800 – 2 200 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Трендовые эффекты / Лучики</span>
+                                <div class="price-details">
+                                    <span class="price-time">3 ч</span>
+                                    <span class="price-cost">от 2 200 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Окрашивание / Снятие</span>
+                                <div class="price-details">
+                                    <span class="price-time">30-40 мин</span>
+                                    <span class="price-cost">300 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Threading & Permanent -->
+                <div class="price-category">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Тридинг и Перманентный макияж</h3>
+                        <ion-icon name="chevron-down-outline" class="accordion-icon"></ion-icon>
+                    </div>
+                    <div class="accordion-content">
+                        <div class="price-table">
+                            <div class="price-row">
+                                <span class="price-name">Тридинг (любая зона лица)</span>
+                                <div class="price-details">
+                                    <span class="price-time">15 мин</span>
+                                    <span class="price-cost">200 – 250 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Тридинг (лицо полностью)</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">500 ₽</span>
+                                </div>
+                            </div>
+                            <div class="price-row">
+                                <span class="price-name">Перманентный макияж (Губы / Брови)</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч</span>
+                                    <span class="price-cost">7 000 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Перманентный макияж (Межресничка)</span>
+                                <div class="price-details">
+                                    <span class="price-time">1 ч</span>
+                                    <span class="price-cost">6 000 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Коррекция перманентного макияжа</span>
+                                <div class="price-details">
+                                    <span class="price-time">2 ч</span>
+                                    <span class="price-cost">4 000 ₽</span>
+                                </div>
+                            </div>
+                             <div class="price-row">
+                                <span class="price-name">Удаление ремувером</span>
+                                <div class="price-details">
+                                    <span class="price-time">30 мин</span>
+                                    <span class="price-cost">1 500 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="services-cta">
+                <a href="https://n1024198.yclients.com/" target="_blank" class="cta-btn">Записаться Онлайн</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Почему Выбирают Нас</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-card-inner">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon"><ion-icon name="shield-checkmark"></ion-icon></div>
+                        </div>
+                        <h3>Стерильные инструменты</h3>
+                        <p>После каждого клиента инструменты проходят все этапы стерилизации и упаковываются в стерильный крафтовый пакет, который распаковывается при вас. Также мы используем одноразовые бафы и пилки, которые вы можете забрать после процедуры.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-inner">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon"><ion-icon name="home"></ion-icon></div>
+                        </div>
+                        <h3>Уютная атмосфера</h3>
+                        <p>Мы заботимся не только о вашей внешности, но и о вашем внутреннем состоянии, поэтому в нашей студии царит атмосфера домашнего уюта с мягкой мебелью, вкусными напитками, печеньем и приятной ненавязчивой музыкой.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-inner">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon"><ion-icon name="diamond"></ion-icon></div>
+                        </div>
+                        <h3>Профессиональные материалы</h3>
+                        <p>Мы используем только профессиональные инструменты и качественные материалы, которые делают покрытие не только более стойким, но и красивым.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-inner">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon"><ion-icon name="school"></ion-icon></div>
+                        </div>
+                        <h3>Квалифицированные специалисты</h3>
+                        <p>В нашей студии работают только квалифицированные специалисты, которые даже в статусе стажера уже отлично знают свое дело. Также наши мастера регулярно проходят повышение квалификации и следят за всеми новинками и трендами.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-card-inner">
+                        <div class="feature-icon-wrapper">
+                            <div class="feature-icon"><ion-icon name="time"></ion-icon></div>
+                        </div>
+                        <h3>Всегда вовремя</h3>
+                        <p>Мы ценим ваше и свое время, поэтому все специалисты выполняют свою работу в строго отведенное время и это никогда не отображается на качестве работы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title">Отзывы Наших Гостей</h2>
+            <div class="reviews-carousel-wrapper">
+                <button class="carousel-btn prev" onclick="scrollReviews(-1)">
+                    <ion-icon name="chevron-back-outline"></ion-icon>
+                </button>
+                <div class="reviews-carousel" id="reviewsCarousel">
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Уже год хожу делать маникюр только в это место. Мастер делает все очень
+                            аккуратно и достаточно быстро. Ни разу меня не поранила, хотя у меня очень тонкая кожа."</p>
+                        <span class="review-author">— Elizaveta Armenovna</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Очень уютная атмосфера. Просторно и светло, очень вежливые и улыбчивые
+                            мастера, знают своё дело! Даже стажёры делают своё дело лучше, чем в некоторых салонах."</p>
+                        <span class="review-author">— Галина Фирсова</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Была один раз. Всё понравилось! Очень удобное расположение салона. Есть
+                            зона ожидания, где всегда предложат напитки. Уютно. Персонал очень вежливый."</p>
+                        <span class="review-author">— Анна Павленко</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Большое спасибо мастеру Мария за прекрасные бровки. Приятная девушка и
+                            профессионал своего дела. Сам салон тоже весьма уютен."</p>
+                        <span class="review-author">— Kris M</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"У жены брови отпад, в очень хорошем смысле молодцы."</p>
+                        <span class="review-author">— Данил Филиппов</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Это очень уютное место, атмосфера там просто волшебная!!! Мастера феи
+                            красоты. Теперь бровки делаю только тут."</p>
+                        <span class="review-author">— Верочка Лосева</span>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">★★★★★</div>
+                        <p class="review-text">"Близкая знакомая оформляла брови, очень впечатляет, красиво делают, как
+                            мужчина очевидец, рекомендую всем."</p>
+                        <span class="review-author">— Леонид Гудим</span>
+                    </div>
+                </div>
+                <button class="carousel-btn next" onclick="scrollReviews(1)">
+                    <ion-icon name="chevron-forward-outline"></ion-icon>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function scrollReviews(direction) {
+            const container = document.getElementById('reviewsCarousel');
+            const scrollAmount = 370; // Approx card width + gap
+            container.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+        }
+
+        function toggleAccordion(element) {
+            const category = element.parentElement;
+            const content = element.nextElementSibling;
+            
+            // Close other open accordions (optional, but keeps it cleaner)
+            const allCategories = document.querySelectorAll('.price-category');
+            allCategories.forEach(item => {
+                if (item !== category && item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    item.querySelector('.accordion-content').style.maxHeight = null;
+                }
+            });
+
+            category.classList.toggle('active');
+            
+            if (category.classList.contains('active')) {
+                content.style.maxHeight = content.scrollHeight + "px";
+            } else {
+                content.style.maxHeight = null;
+            }
+        }
+    </script>
+
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Частые Вопросы</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">Нужно ли записываться заранее?</div>
+                    <p>Да, мы рекомендуем предварительную запись, чтобы гарантировать удобное для вас время.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Принимаете ли вы карты?</div>
+                    <p>Да, вы можете оплатить услуги дебетовой картой.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Есть ли парковка?</div>
+                    <p>Да, у нас есть парковка, включая места для людей с ограниченными возможностями.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Можно ли прийти с детьми?</div>
+                    <p>Конечно, наше место подходит для посещения с детьми.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Ждем Вас в Гости</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><ion-icon name="location"></ion-icon></div>
+                        <div>
+                            <strong>Адрес:</strong> <br>
+                            г. Тольятти, ул. 40 Лет Победы, 58
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><ion-icon name="call"></ion-icon></div>
+                        <div>
+                            <strong>Телефон:</strong> <br>
+                            <a href="tel:+79278931155">+7 927 893-11-55</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><ion-icon name="time"></ion-icon></div>
+                        <div>
+                            <strong>График работы:</strong> <br>
+                            Ежедневно: 10:00 – 21:00
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><ion-icon name="logo-instagram"></ion-icon></div>
+                        <div>
+                            <strong>Соцсети:</strong> <br>
+                            <a href="https://instagram.com/nevelin_tlt" target="_blank"
+                                style="color: var(--primary); text-decoration: underline;">@nevelin_tlt</a> (Инстаграм)
+                        </div>
+                    </div>
+                    <a href="tel:+79278931155" class="cta-btn">Позвонить Нам</a>
+                </div>
+                <div class="map-container">
+                    <!-- Embedding a map location based on address search -->
+                    <iframe src="https://yandex.ru/map-widget/v1/?text=Тольятти+ул.+40+Лет+Победы+58&z=17" width="100%"
+                        height="400" frameborder="0" allowfullscreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 Студия красоты Browe House 2.0. Тольятти.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
